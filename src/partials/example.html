@@ -1,37 +1,185 @@
-<article class="example" id="uk">
-  <h1>HTML-partials</h1>
-
-  <!--
-    ❗️❗️❗️ The path to images from the HTML partial
-    is the same as from the index.html file
-  -->
-  <img src="images/logo.png" alt="" width="320" />
-
-  <p>
-    The
-    <a
-      href="https://github.com/posthtml/posthtml-include"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      posthtml-include
-    </a>
-    plugin allows you to add code from other HTML files (fragments) to HTML page
-    files. Fragments are stored in the <code>src/partials</code> folder. The
-    addition occurs when compiling page files, such as <code>index.html</code>.
-  </p>
-
-  <p>
-    This <code>example.html</code> file is an example of such a snippet, with
-    the markup of a certain part of the main page. This is very convenient for
-    team development on student projects, when several people write in one HTML
-    file at once.
-  </p>
-
-  <p>
-    The syntax for adding a fragment to the main file is:
-    <code> &lt;include src="./partials/filename.html"&gt;&lt;/include&gt;</code>
-  </p>
-
-  <div class="background"></div>
-</article>
+<header class="header">
+  <div class="container header_content">
+    <div class="header_icon">
+      <a class="site_nav__link" href="/">
+        <svg class="site-nav__icon" width="213" height="38">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="site_nav">
+      <div class="site_nav__box">
+        <ul class="site_nav__list">
+          <li class="site_nav__item">
+            <a class="site_nav__link" href="">Home</a>
+          </li>
+          <li class="site_nav__item">
+            <a class="site_nav__link" href="">Partner</a>
+          </li>
+          <li class="site_nav__item">
+            <a class="site_nav__link" href="">Invest</a>
+          </li>
+          <li class="site_nav__item">
+            <a class="site_nav__link" href="">Features</a>
+          </li>
+          <li class="site_nav__item">
+            <a class="site_nav__link" href="">Contact-us</a>
+          </li>
+          <li class="site_nav__item__login">
+            <a class="login_color" href="">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="container hero_box">
+      <div class="hero_box__title">
+        <div class="hero_box__title_el">
+          <div class="hero_title_position">
+            <p class="hero_title">Включи возможности</p>
+          </div>
+          <div class="hero_title_position">
+            <h1 class="hero_title_second">
+              <span class="title_color">Получи</span> Максимальную
+              <span class="title_color">Прибыль</span>
+            </h1>
+          </div>
+          <div class="hero_title_position title_position">
+            <p class="hero_title_third">
+              Твой капитал растет за счет сферы P2P кредитования
+            </p>
+          </div>
+          <div class="hero_title_position" style="display: flex">
+            <a class="hero_button" href="" role="button">
+              <span class="hero_button__text">Начни Инвестровать</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero_box__phone">
+        <div class="hero_phone">
+          <img class="image" src="./images/phone.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <div class="about_box">
+        <div class="about_box__title">
+          <h2 class="about_title">
+            Что такое <span class="about_title__color">Monexo-invest?</span>
+          </h2>
+        </div>
+        <div class="about_box__title">
+          <div class="about_box__title__size">
+            <p class="about_title__text">
+              Это международная платформа кредитования между людьми. Инвестор
+              получает шанс удвоить свой капитал и выступить кредитором через
+              Monexo, а заемщик получает средства на комфортных и гибких для
+              него условиях. Все это происходит онлайн в удобном режиме для
+              каждого.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="partenrs">
+    <div class="container partners_box">
+      <ul class="partners_list">
+        <li class="partenrs_list__item">
+          <div class="partners_item__box">
+            <div class="partners_item__box_text">
+              <p class="partners_item__text">Инвестор</p>
+            </div>
+            <div class="partners_item__box_image">
+              <div class="box_image">
+                <svg class="site-nav__icon" width="118" height="78">
+                  <use href="./images/icons.svg#icon-deal"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="partners_text__box">
+            <p class="partners_text">Инвестор</p>
+          </div>
+        </li>
+        <li class="partenrs_list__item">
+          <div class="partners_item__box">
+            <div class="partners_item__box_text">
+              <p class="partners_item__text">Monexo</p>
+            </div>
+            <div class="partners_item__box_image">
+              <div class="box_image__size">
+                <img
+                  class="image_monexo"
+                  alt="grouppng"
+                  src="./images/grouppng.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="partners_text__box">
+            <p class="partners_text">Monexo</p>
+          </div>
+        </li>
+        <li class="partenrs_list__item">
+          <div class="partners_item__box">
+            <div class="partners_item__box_text">
+              <p class="partners_item__text">Заемщик</p>
+            </div>
+            <div class="partners_item__box_image">
+              <div class="box_image">
+                <svg class="site-nav__icon" width="103" height="168">
+                  <use href="./images/icons.svg#icon-pig"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="partners_text__box">
+            <p class="partners_text">Заемщик</p>
+          </div>
+        </li>
+      </ul>
+      <div class="partners_invest">
+        <div class="partners_invest__box">
+          <p class="partners_text_invest">
+            В условиях общей экономики, Monexo так же финансирует, Uber & Ola —
+            траспортировки.
+          </p>
+        </div>
+        <div class="partners_invest__box">
+          <button class="partenrs_button" type="button">Приступим</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="present">
+    <div class="container">
+      <div class="present_box__title">
+        <h2 class="present_title">
+          <span class="present_title__color">Что мы </span>предлагаем
+        </h2>
+      </div>
+      <div class="present_box__text">
+        <p class="present_text">
+          Monexo связывает на одно платформе тех кому нужны деньги и тех кто
+          хочет удвоить свой капитал быстро и качественно. Мы предлагаем обеим
+          сторонам выгодные и регулируемые нами условия, которые подходят
+          каждому.
+        </p>
+        <p class="present_text">
+          Мы помогаем инвесторам диверсифицировать свой инвестиционный портфель
+          с помощью заемщиков которые имеют рейтинг , а заемщикам пользоваться
+          кредитными средствами удобно, бысто - лучше чем в банке.
+        </p>
+      </div>
+      <div></div>
+    </div>
+  </section>
+</main>
+<footer></footer>

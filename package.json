@@ -1,5 +1,5 @@
 {
-  "name": "parcel-project-template",
+  "name": "monexo_front",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://goitacademy.github.io/parcel-project-template",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/danielritofos/monexo_front.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Vidiborets Andrew <a.vidiborets@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/Vidiborets/"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"

@@ -2,10 +2,10 @@
   "name": "monexo_front",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://vidiborets.github.io/monexo/",
+  "homepage": "https://Vidiborets.github.io/monexo/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /monexo/"
+    "build": "parcel build src/*.html --public-url /parcel-project-template/"
   },
   "repository": {
     "type": "git",

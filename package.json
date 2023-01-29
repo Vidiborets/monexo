@@ -2,14 +2,14 @@
   "name": "monexo_front",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/danielritofos/monexo_front.git",
+  "homepage": "https://github.com/Vidiborets/monexo.git",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /monexo/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danielritofos/monexo_front.git"
+    "url": "git+https://github.com/Vidiborets/monexo.git"
   },
   "keywords": [],
   "author": "Vidiborets Andrew <a.vidiborets@gmail.com>",

@@ -4,6 +4,10 @@
 .site_nav__list {
   display: flex;
 }
+.site-nav__list_mobile {
+  flex-direction: column;
+  align-items: flex-end;
+}
 .site_nav__item {
   padding: 6px 25px;
   margin-left: 5px;

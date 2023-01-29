@@ -1,7 +1,6 @@
 {
   "name": "monexo",
   "version": "2.0.0",
-  "description": "",
   "homepage": "https://Vidiborets.github.io/monexo/",
   "scripts": {
     "start": "parcel src/*.html",

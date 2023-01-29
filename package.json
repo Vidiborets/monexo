@@ -1,10 +1,12 @@
 {
   "name": "monexo",
   "version": "2.0.0",
-  "homepage": "https://Vidiborets.github.io/monexo",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /monexo/"
+    "build": "parcel build src/*.html --public-url /monexo/",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy -d",
+    "netlify": "netlify"
   },
   "repository": {
     "type": "git",

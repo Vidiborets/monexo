@@ -5,4 +5,6 @@ var flkty = new Flickity(elem, {
   contain: true,
   autoPlay: 1500,
   prevNextButtons: false,
+
+  wrapAround: true,
 });

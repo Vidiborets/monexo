@@ -10,4 +10,10 @@
 
     hoverMenu.classList.toggle('is-open');
   });
+  hoverMenu.addEventListener('mouseleave', mouseLeave);
+  function mouseLeave(e) {
+    hoverBtn.classList.toggle('is-open');
+
+    hoverMenu.classList.toggle('is-open');
+  }
 })();

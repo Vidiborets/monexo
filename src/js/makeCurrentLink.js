@@ -19,6 +19,7 @@ for (let i = 0; i < currentLinkAll.length; i++) {
       addCardSecond();
     }
     if (currentTitleEl.innerText === 'New to Investing') {
+      markUpContainer.innerHTML = '';
       addCard();
     }
     if (currentTitleEl.innerText === 'A Regular Investor') {

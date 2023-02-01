@@ -3,7 +3,13 @@
 }
 .tablist_list {
   display: flex;
-
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
   border-bottom: 2px solid #2b3453;
 }
 .tablist_item {
@@ -15,6 +21,13 @@
   cursor: pointer;
   width: 100%;
   text-align: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .individ_item__title {
   font-family: 'Poppins', Sans-serif;
@@ -38,18 +51,42 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .tablist_current_box__title {
   justify-content: center;
   display: flex;
   flex-direction: column;
   width: 50%;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .tablist_current_box__image {
   background-image: url(../images/individ_image.png);
   background-size: contain;
   width: 364px;
   height: 389px;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    width: 264px;
+    height: 289px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .tablist_current__title {
   color: #2b3453;
@@ -87,6 +124,13 @@
   width: 100%;
   text-align: center;
   background-color: #2b3453;
+  @media screen and (max-width: 767px) {
+    padding: 15px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .submenu_title {
   color: #ceefe9;
@@ -108,6 +152,13 @@
   font-weight: 500;
   line-height: 1.4em;
   padding: 0px 80px 0px 80px;
+  @media screen and (max-width: 767px) {
+    padding: 15px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .tablist_second_markup__box {
   margin-top: 30px;
@@ -115,6 +166,14 @@
   align-items: center;
   justify-content: space-around;
   margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .tablist_second__title {
   color: #2b3453;
@@ -151,6 +210,13 @@
   margin: -40px -40px 0px 40px;
   --e-column-margin-right: -40px;
   --e-column-margin-left: 40px;
+  @media screen and (max-width: 767px) {
+    margin: 40px 0px 40px 0px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .tablist_secont__card_firs_title {
   color: #2b3453;
@@ -175,6 +241,14 @@
   width: 364px;
   height: 410px;
   background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    width: 264px;
+    height: 310px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .tablist_second_box__after {
   border-radius: 30px 30px 30px 30px;
@@ -196,18 +270,46 @@
   color: #d9ed92;
 }
 .tablist_list_item {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    display: flex;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 .tablist_item_list {
-  flex-basis: calc((100% - 3 * 30px) / 3);
-  text-align: center;
-  margin-left: 30px;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
+  @media screen and (max-width: 767px) {
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
 }
 .tablist_item_image {
   width: 98px;

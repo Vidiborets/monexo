@@ -31,7 +31,7 @@
     "nanoid": "^4.0.0",
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "picocolors": "^1.0.0",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.31",
     "purgecss": "^5.0.0",
     "supports-color": "^9.3.1"
   },
